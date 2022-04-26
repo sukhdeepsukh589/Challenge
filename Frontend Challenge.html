@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Frontend Mentor Challenge
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: rgb(254, 254, 254);
+            }
+            .header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                vertical-align: middle;
+                align-items: center;
+                width: 80%;
+                margin-left: 100px;
+                margin-top: 30px;
+            }
+            .left{
+                display: flex;
+                flex-direction: row;
+            }
+            .imo{
+                width: 80px;
+                height: 30px;
+            }
+            
+            .logo, .features, .companys, .career, .about{
+                font-family: Roboto, Arial;
+                margin-left: 30px;
+                color: grey;
+                border:none;
+                cursor: pointer;
+                display: flex;
+                position: relative;
+            }
+            
+            .right{
+                display: flex;
+                color: grey;
+                cursor: pointer;
+                font-family: Roboto, Arial;
+            }
+            .register{
+                font-family: Roboto, Arial;
+                font-size: 14px;
+                border: 2px  solid grey;
+                border-radius: 8px;
+                background-color: white;
+                margin-left: 40px;
+                margin-top: -10px; 
+                cursor: pointer;
+                padding-left: 12px;
+                padding-right: 12px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            .register:hover{
+                background-color: black;
+                color: white;
+            }
+            .register:active{
+                opacity: 0.5;
+            }
+            .full-container{
+                display: grid;
+                grid-template-columns: 40% 33%;
+                justify-content: center;
+                margin-top: 30px;
+                align-items: end;
+            }
+            .img{
+                width: 400px;     
+               
+            }
+            .para{
+                display: inline-block;
+                font-family: Roboto, Arial;
+                display: grid;               
+            }
+            .title{
+                font-size: 77px;
+                font-weight: 700;
+                width: 450px;
+                margin-bottom: 0;
+            }
+            
+            .basic{
+                margin-top: 35px;
+                width: 350px;
+                color: grey;
+            }
+            .button{
+                background-color: black;
+                font-size: 14px;
+                font-family: Roboto, Arial;
+                color:white;
+                border: none;
+                width: 100px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 7px;
+                margin-top: 30px;
+                cursor: pointer;
+            }
+            .button:hover{
+                opacity: 0.8;
+            }
+            .button:active{
+               opacity: 0.4;
+            }
+            
+            .logos{
+                display: flex;
+                margin-top: 80px;
+                width: 90px;
+            }
+            .data{
+                height: 18px;
+                margin-right: 20px;
+            }
+            .audio{
+                height: 30px;
+                margin-right: 20px;
+            }
+            .meet{
+                height: 20px;
+                margin-right: 20px;
+            }
+            .maker{
+                height: 20px; 
+            }
+            .icon{
+                display: flex;
+                padding: 6px 12px;
+                padding-right: 40px;
+                font-size: 14px;
+                
+            }
+            .icons{
+                position: absolute;
+                background-color: white;
+                box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+                border-radius: 6px;
+                opacity: 0;
+                pointer-events: none;
+                }
+                .features:hover .icons{
+                opacity: 1;
+            }
+                .comp{
+                position: absolute;
+                background-color: white;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+                padding: 6px 14px;
+                padding-right: 40px;
+                border-radius: 10px 15px;
+                opacity: 0;
+                font-size: 14px;
+                line-height: 25px;
+                pointer-events: none;
+                }
+                .companys:hover .comp{
+                    opacity: 1;
+
+                }
+            .icons img{
+                margin-right: 10px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <header>
+        <div class="header">
+            <div class="left">
+            <div>
+                <img class="imo" src="images/logo.svg">
+            </div>
+            <div class="features">
+                <div>
+              <div class="feature">
+                  Features
+                  <img src="images/icon-arrow-down.svg">
+                  </div>
+                  <div class="icons">
+                      <div class="icon">
+                         <img src="images/icon-todo.svg"> 
+                         <div>Todo List</div>
+                      </div>
+                      <div class="icon">
+                        <img src="images/icon-calendar.svg"> 
+                        <div>Calender</div>
+                     </div>
+                     <div class="icon">
+                        <img src="images/icon-reminders.svg"> 
+                        <div>Reminders</div>
+                     </div>
+                     <div class="icon">
+                        <img src="images/icon-planning.svg"> 
+                        <div>Planning</div>
+                     </div>
+                  </div>
+            </div>
+            </div>
+            <div class="companys">
+                <div>
+                   <div>Company
+                    <img src="images/icon-arrow-down.svg"> </div> 
+                    <div class="comp">
+                        <div>History</div>
+                        <div>Our Team</div>
+                        <div>Blog</div>
+                    </div>
+              </div>
+            </div>
+            <div class="career">
+                <div>
+                    Careers
+              </div>
+            </div>
+            <div class="about">
+                    About
+              </div>
+        </div>
+        <div class="right"> 
+            <div class="login">Login</div>
+            <button class="register">Register</button>
+        </div>
+        </div>
+        </header>
+        <div class="full-container">
+            <div class="para">
+            <p class="title">Make remote work</p>
+            <p class="basic"> Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <button class="button">Learn more</button>
+            <div class="logos">
+            <img class="data" src="images/client-databiz.svg">
+            <img class="audio" src="images/client-audiophile.svg">
+            <img class="meet" src="images/client-meet.svg">
+            <img class="maker" src="images/client-maker.svg">
+        </div>
+            </div>
+            <div class="image">
+                <img class="img" src="images/image-hero-desktop.png">
+            </div>
+        </div>
+
+    </body>
+</html>
